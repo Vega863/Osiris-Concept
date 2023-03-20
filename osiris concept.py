@@ -66,7 +66,7 @@ def init():
   print("Encrypted text:", obfuscated_text)
   print("Using key:", key)
   deobfuscated_text = decrypt(obfuscated_text, key)
-  print("Encrypted text:", deobfuscated_text)
+  print("Decrypted text:", deobfuscated_text)
   a = input("retry ? (y/n)")
   if a == ("y" or "yes"):
      init()
