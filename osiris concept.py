@@ -48,8 +48,8 @@ col6 = Col.StaticMIX((Col.green, Col.dark_green))
 
 
 def encrypt(s):
-    key = input("Put a key encrypt maximum (1114046):")
-    key = int(key) # the maximum key is 1114046
+    key = input("Put a key encrypt maximum (1113989):")
+    key = int(key) # the maximum key is 1113989
     return ''.join(chr(ord(c) + key) for c in s), key
 
 def decrypt(s, key):
@@ -66,7 +66,7 @@ def init():
   print("Encrypted text:", obfuscated_text)
   print("Using key:", key)
   deobfuscated_text = decrypt(obfuscated_text, key)
-  print("Decrypted text:", deobfuscated_text)
+  print("Encrypted text:", deobfuscated_text)
   a = input("retry ? (y/n)")
   if a == ("y" or "yes"):
      init()
